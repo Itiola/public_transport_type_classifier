@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transport Type Classifier</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Transport Type Classifier</h1>
+    <p>Upload or capture a photo of a Lagos transport type</p>
+
+    <div id="dropZone" class="upload-box">
+      <p>📤 Drag & drop image here or</p>
+      <input type="file" id="imageInput" accept="image/*" />
+      <button id="cameraBtn">Use Camera</button>
+      <video id="cameraStream" autoplay style="display:none;"></video>
+      <canvas id="snapshotCanvas" style="display:none;"></canvas>
+      <button id="snapBtn" style="display:none;">📸 Capture</button>
+      <img id="preview" alt="Image preview" style="display:none;" />
+      <button id="predictBtn">Predict</button>
+    </div>
+
+    <div id="result" class="result-box">Prediction will appear here.</div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
